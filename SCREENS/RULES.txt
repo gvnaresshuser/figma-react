@@ -1,0 +1,115 @@
+
+## 3) Map Auto Layout → Flex/Grid
+
+In Figma Inspect:
+
+* Auto layout (Horizontal) → `flex`
+* Auto layout (Vertical) → `flex-col`
+* Spacing → `gap`
+* Padding → `p-*`
+
+Example:
+
+```jsx
+// Figma: horizontal auto layout, gap 16
+<div className="flex items-center gap-4">
+```
+
+👉 Rule:
+
+* mobile = stacked
+* desktop = row/grid
+
+
+# 🔥 Quick Cheat Sheet
+
+| Figma       | React        |
+| ----------- | ------------ |
+| Frame       | div          |
+| Auto Layout | flex         |
+| Spacing     | gap          |
+| Padding     | p-*          |
+| Color       | bg-*         |
+| Text        | text-*       |
+| Component   | reusable JSX |
+
+
+* Auto layout (Horizontal) → `flex`
+* Auto layout (Vertical) → `flex-col`
+* Spacing → `gap`
+* Padding → `p-*`
+
+* `max-w-*` (center content)
+* `px-*` (responsive padding)
+
+
+Mapping Rules for This Case
+| Figma CSS         | Tailwind        |
+| ----------------- | --------------- |
+| position:absolute | `absolute`      |
+| left: 45.28%      | `left-[45.28%]` |
+| right: 0%         | `right-0`       |
+| top: 0%           | `top-0`         |
+| bottom: 0%        | `bottom-0`      |
+
+🔥 Important Conversion Rule (Figma → React)
+| Figma Property | React SVG               |
+| -------------- | ----------------------- |
+| Fill color     | `fill="currentColor"`   |
+| Stroke color   | `stroke="currentColor"` |
+| Width/Height   | Tailwind `w-* h-*`      |
+| Color control  | `text-*`                |
+
+-------------------------------------------------------------
+Best Ways to Take Vector from Figma
+🔹 1. Export as SVG (Recommended)
+Steps:
+Select the vector/icon in Figma
+Go to right panel → Export
+Choose SVG
+Click Export
+-------------------------------------------------------------
+How to Use in React
+🔹 Option 1: Inline SVG (Best 🔥)
+const Icon = () => (
+  <svg
+    className="w-6 h-6 text-black"
+    viewBox="0 0 24 24"
+    fill="none"
+  >
+    <path d="M5 12L19 12" stroke="currentColor" strokeWidth="2" />
+  </svg>
+);
+-------------------------------------------------------------
+Option 2: Store in public/assets
+public/assets/icon.svg
+<img src="/assets/icon.svg" alt="icon" />
+
+👉 Use when:
+
+You don’t need to change color dynamically
+-------------------------------------------------------------
+Option 3: Import as Component (Advanced)
+import { ReactComponent as Icon } from "./icon.svg";
+
+<Icon className="w-6 h-6 text-blue-500" />
+
+👉 Works in CRA / Vite (with config)
+-------------------------------------------------------------
+When to Use What
+
+| Scenario            | Use               |
+| ------------------- | ----------------- |
+| Icons               | Inline SVG ✅      |
+| Logos (fixed)       | `<img src>`       |
+| Editable colors     | Inline SVG        |
+| Background graphics | SVG as background |
+-------------------------------------------------------------
+
+⚖️ Balance (This is the key skill)
+| Figma gives          | You convert to        |
+| -------------------- | --------------------- |
+| Absolute positioning | Flex/Grid             |
+| Canvas offsets       | Centering / layout    |
+| Visual spacing       | Exact Tailwind values |
+

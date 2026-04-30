@@ -1,0 +1,126 @@
+From Figma to Code (Without Dev Mode)
+Introduction
+Figma is one of the most popular design tools for creating user interfaces. While Figma
+provides a Dev Mode feature to inspect designs and copy code, not everyone has access
+to it. This document explains how to write clean code directly from a Figma design, step
+by step, without relying on Dev Mode.
+1 Why Learn Without Dev Mode?
+• Not all accounts have Dev Mode access.
+• Helps you develop a deeper understanding of spacing, typography, and layout.
+• Improves problem-solving skills when translating design to code.
+2 Understanding Layouts in Figma
+One of the most important skills when converting a design to code is understanding how
+Figma layouts map to HTML and CSS concepts.
+2.1 Horizontal vs. Vertical Layout
+In Figma, a Horizontal Direction layout is similar to flex-direction: row in CSS:
+• Elements are placed side by side (left to right).
+• Example: Navigation bar items (Home, About, Contact).
+A Vertical Direction layout is similar to flex-direction: column in CSS:
+• Elements are placed one below the other.
+• Example: A card with an image on top, then a title, then a description.
+Code Example:
+. container {
+display : flex ;
+flex - direction : row ; /* Horizontal layout */
+}
+. column - container {
+display : flex ;
+flex - direction : column ; /* Vertical layout */
+}
+1
+2.2 Gap in Layouts
+The Gap in Figma means the space between child elements inside a layout, equivalent to CSS gap.
+. buttons {
+display : flex ;
+flex - direction : row ;
+gap : 16 px ; /* space between each button */
+}
+2.3 Width and Height
+Width and height represent the size of the selected element or frame:
+• Frame: overall size of the frame.
+• Rectangle, Button, or Image: size of that element.
+. element {
+width : 300 px ;
+height : 200 px ;
+}
+2.4 How to Select Elements in Figma
+1. Double Clicking on the Canvas: Keep double clicking until you reach the
+specific element inside a frame or group.
+2. Using the Layers Panel (Left Sidebar): Click the element name in the layers
+panel for quick and precise selection.
+Figure 1: Sample Figma layout selection from left panel
+3 Export Assets Manually
+Even without Dev Mode, you can export images, icons, or logos for use in your code.
+2
+Figure 2: Sample Figma layout with properties panel on the right
+3.1 Where to Find the Export Option
+1. Select the element you want to export.
+2. Look at the right-hand side panel.
+3. Scroll down to the Export section.
+4. Click the + button to add an export setting.
+5. Choose the format (PNG, JPG, or SVG) and click Export.
+3.2 When to Use PNG vs. SVG
+• PNG: Best for photos or detailed images.
+• SVG: Best for logos and icons; scales perfectly and allows color changes via CSS.
+Example in HTML:
+<img src =" product .png " alt =" Product ">
+<img src =" logo .svg " alt =" Company Logo ">
+4 Translate Typography and Styling
+Figma text layers include properties to replicate in CSS:
+• Font Family (e.g., Inter, Roboto)
+• Font Size (e.g., 24px)
+• Font Weight (e.g., 700)
+3
+(a) Figma layout with right-side properties
+panel (b) Export options shown in the panel
+Figure 3: Understanding how to inspect and export assets in Figma
+• Color (e.g., #333333)
+• Background Color (e.g., #f5f5f5)
+• Line Height (e.g., 28px)
+• Letter Spacing (e.g., 0.5px)
+• Text Alignment (left, center, right)
+Example in CSS:
+h1 {
+font - family : ’ Inter ’ , sans - serif ;
+font - size : 24 px ;
+font - weight : 700;
+color : #333333;
+background - color : # f5f5f5 ;
+line - height : 28 px ;
+4
+Figure 4: Sample typography panel with all styles
+letter - spacing : 0.5 px ;
+text - align : center ;
+}
+5 Measure Spacing Manually
+Using the Inspect Tool
+1. Select the element to measure.
+2. Hold Alt (Windows) or Option (Mac) and hover over another element.
+3. Note the distances; these translate into padding or margin in CSS.
+5.1 Padding vs. Margin
+• Padding: Inside an element between content and border.
+• Margin: Outside an element between it and other elements.
+. container {
+padding : 20 px ; /* Inside space */
+margin - bottom : 16 px ; /* Outside space */
+}
+6 Recreate Components
+For buttons or cards, note:
+• Background color
+5
+• Border radius
+• Text style
+<button class =" primary -btn "> Click Me </ button >
+. primary - btn {
+background - color : #4 A90E2 ;
+color : white ;
+padding : 12 px 24 px ;
+border : none ;
+border - radius : 8 px ;
+font - size : 16 px ;
+}
+Conclusion
+Even without Dev Mode, you can successfully transform a Figma design into working code
+by carefully observing typography, spacing, and structure. With practice, this improves
+both design interpretation and coding skills.
+6

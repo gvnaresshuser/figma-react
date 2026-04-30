@@ -1,0 +1,149 @@
+components/
+│
+├── Navbar/
+│     └── Navbar.jsx
+│
+├── Hero/
+│     ├── HeroSection.jsx
+│     ├── HeroBackground.jsx
+│     ├── HeroContent.jsx
+│
+│     ├── SearchBar/
+│     │     ├── SearchBar.jsx
+│     │     ├── LocationInput.jsx
+│     │     ├── DateInput.jsx
+│     │     ├── GuestsInput.jsx
+│     │     └── SearchButton.jsx
+│
+│     ├── Categories.jsx
+│     └── TitleSection.jsx
+│
+├── Cards/
+│     ├── CardsSection.jsx
+│     ├── SectionHeader.jsx
+│     ├── CardList.jsx
+│     └── DestinationCard.jsx
+│
+├── Background/
+│     ├── Waves.jsx
+│     └── SandOverlay.jsx
+
+
+
+hero section
+	Group
+		Frame 30
+			Frame 28
+				home-line
+					Group
+						Vector
+						Vector
+				Frame 27
+					Label
+					Input
+				arrow-drop-down-line
+					Group
+						Vector
+						Vector
+			Rectangle 3.11
+			Frame 24
+				calendar-line
+					Group
+						Vector
+						Vector
+				Frame 23
+					Label
+					Input
+			Rectangle 3.9
+			Frame 30
+				calendar-line
+					Group
+						Vector
+						Vector
+				Frame 23
+					Label
+					Input
+			Rectangle 3.10
+			Frame 29
+				Frame 26
+					user-3-line (1)
+						Group
+							Vector
+							Vector
+					Frame 25
+						Label
+						Input
+				arrow-drop-down-line	
+					Group
+						Vector
+						Vector
+		Button
+			Input
+			Rectangle 3.8			
+		Rectangle 3.7
+		bg
+	navigation
+		Home
+		About Us
+		Premium
+		Blogs
+		Frame 1
+			Explore
+	Boat
+	image 3
+	Title and Card
+		Text
+			Mountains
+				Mountains
+				Rectangle 4
+				Plains
+				Rectangle 5
+				Beaches
+			Spend your vacation with our activites
+		Frame 20
+			Most popular
+				Most Popular
+				Icon
+			Cards
+				Crad 1
+					Frame 32
+						unsplash:rC2_aH8lAlU
+						Frame 16
+							Trip To Scotland
+							Frame 14
+								Frame 15
+									Frame
+										Vector
+										Vector
+									31 people going
+				Crad 2
+					Frame 32
+						unsplash:GNdp2Q4VZjw
+						Frame 16
+							Trip To Egypt
+							Frame 14
+								Frame 15
+									Frame
+										Vector
+										Vector
+									27 people going
+				Crad 3
+					Frame 32
+						unsplash:MdTtpxGlrz8
+						Frame 16
+							Trip To Greece
+							Frame 14
+								Frame 15
+									Frame
+										Vector
+										Vector
+									20 people going
+	Bg
+		Waves
+			image 2
+			Vector 5
+		Sand
+			Rectangle 17
+			image 2
+Bg
+nickelfox.com

@@ -1,0 +1,57 @@
+
+*******************************************************
+npm create vite@latest figma-react -- --template react
+*******************************************************
+
+cd figma-react
+code .
+
+npm install react-router-dom axios
+npm install react-toastify
+npm install lucide-react
+npm install react-router-dom
+npm install react-datepicker
+npm install lucide-react
+npm install sweetalert2
+=============================================================
+GOOGLE SEARCH
+react js vite with tailwind css
+https://tailwindcss.com/docs/installation/using-vite
+
+npm install tailwindcss @tailwindcss/vite
+
+vite.config.js
+import tailwindcss from '@tailwindcss/vite'
+tailwindcss()
+
+index.css
+@import "tailwindcss";
+=============================================================
+npm run dev
+=============================================================
+TEST TAILWIND CSS INSTALLATION:
+------------------------------
+TO TEST TAILWIND CSS INSTALLATION, HAVE THE FOLLOWING IN App.jsx FILE
+<h1 className="text-3xl font-bold underline text-red-500">
+        Hello world!
+      </h1>
+	  
+	  
+figma.com/design/Ui9xmqM4aGfQbJHj6PR8I1/Travel-App--Community-?m=auto&is-community-duplicate=1&fuid=1469586198314526001
+
+https://www.figma.com/design/Ui9xmqM4aGfQbJHj6PR8I1/Travel-App--Community-?node-id=1413-4&t=8Eo1f2MEZVHrjjQk-0
+
+USE THIS
+https://www.figma.com/design/Ui9xmqM4aGfQbJHj6PR8I1/Travel-App--Community-?node-id=0-1&t=SkzrjiKiKjnbOqhs-1
+
+src/
+ ├── components/
+ │    ├── Navbar.jsx
+ │    ├── Hero.jsx
+ │    ├── Card.jsx
+ │    ├── Footer.jsx
+ │    ├── BottomNav.jsx
+ ├── pages/
+ │    ├── Home.jsx
+ ├── assets/
+ ├── App.jsx
