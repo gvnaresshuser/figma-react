@@ -251,3 +251,791 @@ To https://github.com/gvnaresshuser/figma-react.git
 branch 'main' set up to track 'origin/main'.
 
 E:\MURALI\REACT-JS-CRASH-COURSE\figma-react>
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Microsoft Windows [Version 10.0.26100.8246]
+(c) Microsoft Corporation. All rights reserved.
+
+E:\MURALI\REACT-JS-CRASH-COURSE\figma-react>npm run dev
+
+> figma-react@0.0.0 dev
+> vite
+
+
+  VITE v8.0.10  ready in 12766 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
+12:33:18 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css
+12:33:20 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x2)
+12:33:23 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x3)
+12:34:15 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x4)
+12:35:05 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x5)
+12:35:14 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x6)
+12:35:37 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x7)
+12:36:08 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x8)
+12:36:09 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x9)
+12:36:15 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x10)
+12:36:16 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x11)
+12:36:19 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x12)
+12:36:38 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x13)
+12:36:46 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x14)
+12:37:16 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x15)
+12:37:18 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x16)
+12:37:21 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x17)
+12:37:23 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x18)
+12:37:26 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x19)
+12:37:57 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x20)
+12:38:02 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x21)
+12:38:02 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x22)
+12:38:25 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x23)
+12:38:30 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x24)
+12:38:42 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x25)
+12:39:00 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x26)
+12:39:03 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x27)
+12:39:08 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x28)
+12:39:09 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x29)
+12:39:16 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x30)
+12:40:12 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x31)
+12:40:12 pm [vite] (client) hmr update /src/App.jsx, /src/index.css
+12:40:20 pm [vite] (client) hmr update /src/App.jsx, /src/index.css (x2)
+12:40:23 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css
+12:40:28 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x2)
+12:40:30 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x3)
+12:43:01 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x4)
+12:43:12 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x5)
+12:43:33 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x6)
+12:43:48 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x7)
+12:44:13 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x8)
+12:44:25 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x9)
+12:46:06 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x10)
+12:46:06 pm [vite] Internal server error: Transform failed with 1 error:
+
+[PARSE_ERROR] Error: Unexpected token
+     ╭─[ src/Test.jsx:122:30 ]
+     │
+ 122 │                             {.map((_, i) => (
+     │                              ┬
+     │                              ╰──
+─────╯
+
+  Plugin: vite:oxc
+  File: E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/src/Test.jsx
+      at transformWithOxc (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:3343:19)
+      at TransformPluginContext.transform (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:3411:26)
+      at EnvironmentPluginContainer.transform (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:30164:51)
+      at async loadAndTransform (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:24512:26)
+      at async viteTransformMiddleware (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:24306:20)
+12:46:08 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css
+12:46:27 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x2)
+12:46:27 pm [vite] Internal server error: Transform failed with 1 error:
+
+[PARSE_ERROR] Error: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+     ╭─[ src/Test.jsx:139:31 ]
+     │
+ 139 │                             ))}
+     │                               │
+     │                               ╰─
+─────╯
+
+  Plugin: vite:oxc
+  File: E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/src/Test.jsx
+      at transformWithOxc (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:3343:19)
+      at TransformPluginContext.transform (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:3411:26)
+      at EnvironmentPluginContainer.transform (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:30164:51)
+      at async loadAndTransform (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:24512:26)
+      at async viteTransformMiddleware (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:24306:20)
+12:46:29 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css
+12:46:38 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x2)
+12:46:53 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x3)
+12:47:19 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x4)
+12:47:28 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x5)
+12:47:37 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x6)
+12:47:53 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x7)
+12:47:59 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x8)
+12:48:04 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x9)
+12:48:13 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x10)
+12:48:18 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x11)
+12:48:20 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x12)
+12:48:52 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x13)
+12:49:41 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x14)
+12:50:27 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x15)
+12:50:31 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x16)
+12:50:38 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x17)
+12:50:44 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x18)
+12:51:00 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x19)
+12:51:18 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x20)
+12:51:29 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x21)
+12:51:37 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x22)
+12:51:42 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x23)
+12:53:35 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x24)
+12:53:46 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x25)
+12:53:46 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x26)
+12:54:24 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x27)
+12:54:29 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x28)
+12:54:33 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x29)
+12:54:40 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x30)
+12:54:52 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x31)
+1:32:12 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x32)
+1:32:12 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x33)
+1:32:52 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x34)
+1:36:00 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x35)
+1:36:35 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x36)
+1:36:44 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x37)
+1:36:52 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x38)
+1:37:00 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x39)
+1:37:02 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x40)
+1:37:13 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x41)
+1:37:36 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x42)
+1:38:24 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x43)
+1:38:36 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x44)
+1:38:41 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x45)
+1:38:44 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x46)
+1:38:48 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x47)
+1:38:56 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x48)
+1:38:59 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x49)
+1:39:07 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x50)
+1:39:13 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x51)
+1:41:41 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x52)
+1:41:47 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x53)
+1:42:00 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x54)
+1:42:06 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x55)
+1:42:11 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x56)
+1:42:15 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x57)
+1:42:35 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x58)
+1:42:38 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x59)
+1:42:42 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x60)
+1:42:53 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x61)
+1:43:01 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x62)
+1:43:04 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x63)
+1:43:08 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x64)
+1:43:56 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x65)
+1:44:03 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x66)
+1:44:12 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x67)
+1:44:17 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x68)
+1:47:39 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x69)
+1:47:41 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x70)
+1:48:43 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x71)
+1:48:58 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x72)
+1:49:04 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x73)
+1:49:13 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x74)
+1:49:15 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x75)
+1:49:36 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x76)
+1:49:43 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x77)
+1:49:44 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x78)
+1:49:48 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x79)
+1:49:52 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x80)
+1:49:55 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x81)
+1:49:58 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x82)
+1:50:00 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x83)
+1:50:03 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x84)
+1:50:53 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x85)
+1:50:58 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x86)
+1:51:53 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x87)
+1:52:56 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x88)
+1:53:24 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x89)
+1:53:28 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x90)
+1:53:31 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x91)
+1:53:32 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x92)
+1:53:39 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x93)
+1:53:43 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x94)
+1:53:46 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x95)
+1:53:49 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x96)
+1:54:18 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x97)
+1:54:21 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x98)
+1:54:30 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x99)
+1:54:37 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x100)
+1:54:48 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x101)
+1:54:50 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x102)
+1:54:57 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x103)
+1:55:04 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x104)
+1:55:09 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x105)
+1:55:22 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x106)
+1:55:29 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x107)
+1:55:44 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x108)
+1:55:48 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x109)
+1:55:51 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x110)
+1:55:56 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x111)
+1:56:06 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x112)
+1:56:11 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x113)
+1:56:15 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x114)
+1:56:28 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x115)
+1:56:29 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x116)
+1:56:34 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x117)
+1:56:39 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x118)
+1:56:51 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x119)
+1:56:53 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x120)
+1:57:02 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x121)
+1:57:39 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x122)
+1:58:54 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x123)
+1:59:34 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x124)
+1:59:35 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x125)
+2:00:19 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x126)
+2:01:15 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x127)
+2:02:08 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x128)
+2:02:12 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x129)
+2:02:16 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x130)
+2:02:19 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x131)
+2:02:21 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x132)
+2:02:24 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x133)
+2:02:26 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x134)
+2:03:21 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x135)
+2:03:32 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x136)
+2:03:35 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x137)
+2:03:47 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x138)
+2:03:56 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x139)
+2:04:12 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x140)
+2:04:59 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x141)
+2:05:23 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x142)
+2:05:30 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x143)
+2:06:31 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x144)
+2:06:53 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x145)
+2:07:36 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x146)
+2:07:45 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x147)
+2:07:58 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x148)
+2:08:25 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x149)
+
+E:\MURALI\REACT-JS-CRASH-COURSE\figma-react>
+
+E:\MURALI\REACT-JS-CRASH-COURSE\figma-react>npm install sweetalert2
+
+added 1 package, and audited 192 packages in 6s
+
+41 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+E:\MURALI\REACT-JS-CRASH-COURSE\figma-react>npm run dev
+
+> figma-react@0.0.0 dev
+> vite
+
+2:11:20 pm [vite] (client) Re-optimizing dependencies because lockfile has changed
+
+  VITE v8.0.10  ready in 6621 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
+2:11:22 pm [vite] (client) [optimizer] bundling dependencies...
+2:12:09 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css
+2:12:12 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x2)
+2:12:28 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x3)
+2:12:28 pm [vite] Internal server error: Transform failed with 1 error:
+
+[PARSE_ERROR] Error: Expected `}` but found `;`
+    ╭─[ src/Test.jsx:89:62 ]
+    │
+ 89 │                             onClick={() => setMenuOpen(false);}
+    │                                                              ┬
+    │                                                              ╰── `}` expected
+────╯
+
+  Plugin: vite:oxc
+  File: E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/src/Test.jsx
+      at transformWithOxc (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:3343:19)
+      at TransformPluginContext.transform (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:3411:26)
+      at EnvironmentPluginContainer.transform (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:30164:51)
+      at async loadAndTransform (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:24512:26)
+      at async viteTransformMiddleware (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:24306:20)
+2:12:34 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css
+2:12:39 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x2)
+2:12:42 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x3)
+2:13:18 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x4)
+2:17:55 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x5)
+2:18:20 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x6)
+2:18:21 pm [vite] Internal server error: Transform failed with 1 error:
+
+[PARSE_ERROR] Error: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+     ╭─[ src/Test.jsx:261:34 ]
+     │
+ 261 │                         </div> */}
+     │                                  │
+     │                                  ╰─
+─────╯
+
+  Plugin: vite:oxc
+  File: E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/src/Test.jsx
+      at transformWithOxc (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:3343:19)
+      at TransformPluginContext.transform (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:3411:26)
+      at EnvironmentPluginContainer.transform (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:30164:51)
+      at async loadAndTransform (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:24512:26)
+      at async viteTransformMiddleware (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:24306:20)
+2:18:25 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css
+2:18:28 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x2)
+2:18:57 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x3)
+2:19:17 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x4)
+2:19:22 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x5)
+2:19:44 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x6)
+2:19:58 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x7)
+2:20:02 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x8)
+2:20:09 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x9)
+2:20:27 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x10)
+2:20:37 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x11)
+2:20:49 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x12)
+2:20:58 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x13)
+2:21:41 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x14)
+2:22:37 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x15)
+2:22:40 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x16)
+2:22:52 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x17)
+2:22:54 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x18)
+2:23:07 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x19)
+2:23:14 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x20)
+2:24:16 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x21)
+2:24:18 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x22)
+2:24:40 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x23)
+2:24:40 pm [vite] Internal server error: Transform failed with 1 error:
+
+[PARSE_ERROR] Error: Expected `,` or `)` but found `{`
+     ╭─[ src/Test.jsx:105:25 ]
+     │
+ 102 │                 {menuOpen && (
+     │                              ┬
+     │                              ╰── Opened here
+     │
+ 105 │                         {/* CLOSE BUTTON */}
+     │                         ┬
+     │                         ╰── `,` or `)` expected
+─────╯
+
+  Plugin: vite:oxc
+  File: E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/src/Test.jsx
+      at transformWithOxc (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:3343:19)
+      at TransformPluginContext.transform (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:3411:26)
+      at EnvironmentPluginContainer.transform (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:30164:51)
+      at async loadAndTransform (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:24512:26)
+      at async viteTransformMiddleware (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:24306:20)
+2:24:43 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css
+2:24:43 pm [vite] Internal server error: Transform failed with 1 error:
+
+[PARSE_ERROR] Error: Expected `,` or `)` but found `Identifier`
+     ╭─[ src/Test.jsx:104:27 ]
+     │
+ 102 │                 {menuOpen && (
+     │                              ┬
+     │                              ╰── Opened here
+     │
+ 104 │                     < div className="absolute top-0 left-0 w-full h-full bg-black/70 backdrop-blur-md z-40 flex flex-col items-center justify-center gap-6 text-white text-lg">
+     │                           ────┬────
+     │                               ╰────── `,` or `)` expected
+─────╯
+
+  Plugin: vite:oxc
+  File: E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/src/Test.jsx
+      at transformWithOxc (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:3343:19)
+      at TransformPluginContext.transform (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:3411:26)
+      at EnvironmentPluginContainer.transform (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:30164:51)
+      at async loadAndTransform (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:24512:26)
+      at async viteTransformMiddleware (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:24306:20)
+2:24:50 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css
+2:24:50 pm [vite] Internal server error: Transform failed with 1 error:
+
+[PARSE_ERROR] Error: Expected `,` or `)` but found `Identifier`
+     ╭─[ src/Test.jsx:104:26 ]
+     │
+ 102 │                 {menuOpen && (
+     │                              ┬
+     │                              ╰── Opened here
+     │
+ 104 │                     <div div className="absolute top-0 left-0 w-full h-full bg-black/70 backdrop-blur-md z-40 flex flex-col items-center justify-center gap-6 text-white text-lg">
+     │                          ─┬─
+     │                           ╰─── `,` or `)` expected
+─────╯
+
+  Plugin: vite:oxc
+  File: E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/src/Test.jsx
+      at transformWithOxc (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:3343:19)
+      at TransformPluginContext.transform (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:3411:26)
+      at EnvironmentPluginContainer.transform (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:30164:51)
+      at async loadAndTransform (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:24512:26)
+      at async viteTransformMiddleware (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:24306:20)
+2:24:51 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css
+2:24:52 pm [vite] Internal server error: Transform failed with 1 error:
+
+[PARSE_ERROR] Error: Expected `,` or `)` but found `Identifier`
+     ╭─[ src/Test.jsx:104:27 ]
+     │
+ 102 │                 {menuOpen && (
+     │                              ┬
+     │                              ╰── Opened here
+     │
+ 104 │                     < div className="absolute top-0 left-0 w-full h-full bg-black/70 backdrop-blur-md z-40 flex flex-col items-center justify-center gap-6 text-white text-lg">
+     │                           ────┬────
+     │                               ╰────── `,` or `)` expected
+─────╯
+
+  Plugin: vite:oxc
+  File: E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/src/Test.jsx
+      at transformWithOxc (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:3343:19)
+      at TransformPluginContext.transform (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:3411:26)
+      at EnvironmentPluginContainer.transform (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:30164:51)
+      at async loadAndTransform (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:24512:26)
+      at async viteTransformMiddleware (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:24306:20)
+2:24:53 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css
+2:24:53 pm [vite] Internal server error: Transform failed with 1 error:
+
+[PARSE_ERROR] Error: Expected `,` or `)` but found `Identifier`
+     ╭─[ src/Test.jsx:104:26 ]
+     │
+ 102 │                 {menuOpen && (
+     │                              ┬
+     │                              ╰── Opened here
+     │
+ 104 │                     <div div className="absolute top-0 left-0 w-full h-full bg-black/70 backdrop-blur-md z-40 flex flex-col items-center justify-center gap-6 text-white text-lg">
+     │                          ─┬─
+     │                           ╰─── `,` or `)` expected
+─────╯
+
+  Plugin: vite:oxc
+  File: E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/src/Test.jsx
+      at transformWithOxc (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:3343:19)
+      at TransformPluginContext.transform (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:3411:26)
+      at EnvironmentPluginContainer.transform (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:30164:51)
+      at async loadAndTransform (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:24512:26)
+      at async viteTransformMiddleware (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:24306:20)
+2:24:56 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css
+2:24:56 pm [vite] Internal server error: Transform failed with 1 error:
+
+[PARSE_ERROR] Error: Expected `,` or `)` but found `Identifier`
+     ╭─[ src/Test.jsx:104:26 ]
+     │
+ 102 │                 {menuOpen && (
+     │                              ┬
+     │                              ╰── Opened here
+     │
+ 104 │                     <div div className="absolute top-0 left-0 w-full h-full bg-black/70 backdrop-blur-md z-40 flex flex-col items-center justify-center gap-6 text-white text-lg">
+     │                          ─┬─
+     │                           ╰─── `,` or `)` expected
+─────╯
+
+  Plugin: vite:oxc
+  File: E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/src/Test.jsx
+      at transformWithOxc (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:3343:19)
+      at TransformPluginContext.transform (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:3411:26)
+      at EnvironmentPluginContainer.transform (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:30164:51)
+      at async loadAndTransform (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:24512:26)
+      at async viteTransformMiddleware (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:24306:20)
+2:25:00 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css
+2:25:00 pm [vite] Internal server error: Transform failed with 1 error:
+
+[PARSE_ERROR] Error: Expected `,` or `)` but found `{`
+     ╭─[ src/Test.jsx:106:25 ]
+     │
+ 102 │                 {menuOpen && (
+     │                              ┬
+     │                              ╰── Opened here
+     │
+ 106 │                         {/* CLOSE BUTTON */}
+     │                         ┬
+     │                         ╰── `,` or `)` expected
+─────╯
+
+  Plugin: vite:oxc
+  File: E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/src/Test.jsx
+      at transformWithOxc (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:3343:19)
+      at TransformPluginContext.transform (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:3411:26)
+      at EnvironmentPluginContainer.transform (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:30164:51)
+      at async loadAndTransform (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:24512:26)
+      at async viteTransformMiddleware (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:24306:20)
+2:25:05 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css
+2:25:05 pm [vite] Internal server error: Transform failed with 1 error:
+
+[PARSE_ERROR] Error: Expected `,` or `)` but found `{`
+     ╭─[ src/Test.jsx:104:21 ]
+     │
+ 102 │                 {menuOpen && (
+     │                              ┬
+     │                              ╰── Opened here
+     │
+ 104 │                     {/* <div className="absolute top-0 left-0 w-full h-full bg-black/70 backdrop-blur-md z-40 flex flex-col items-center justify-center gap-6 text-white text-lg"> */}
+     │                     ┬
+     │                     ╰── `,` or `)` expected
+─────╯
+
+  Plugin: vite:oxc
+  File: E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/src/Test.jsx
+      at transformWithOxc (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:3343:19)
+      at TransformPluginContext.transform (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:3411:26)
+      at EnvironmentPluginContainer.transform (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:30164:51)
+      at async loadAndTransform (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:24512:26)
+      at async viteTransformMiddleware (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:24306:20)
+2:25:07 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css
+2:25:07 pm [vite] Internal server error: Transform failed with 1 error:
+
+[PARSE_ERROR] Error: Expected `,` or `)` but found `Identifier`
+     ╭─[ src/Test.jsx:104:26 ]
+     │
+ 102 │                 {menuOpen && (
+     │                              ┬
+     │                              ╰── Opened here
+     │
+ 104 │                     <div className="absolute top-0 left-0 w-full h-full bg-black/70 backdrop-blur-md z-40 flex flex-col items-center justify-center gap-6 text-white text-lg">
+     │                          ────┬────
+     │                              ╰────── `,` or `)` expected
+─────╯
+
+  Plugin: vite:oxc
+  File: E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/src/Test.jsx
+      at transformWithOxc (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:3343:19)
+      at TransformPluginContext.transform (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:3411:26)
+      at EnvironmentPluginContainer.transform (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:30164:51)
+      at async loadAndTransform (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:24512:26)
+      at async viteTransformMiddleware (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:24306:20)
+2:25:24 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css
+2:25:24 pm [vite] Internal server error: Transform failed with 1 error:
+
+[PARSE_ERROR] Error: Expected `,` or `)` but found `Identifier`
+     ╭─[ src/Test.jsx:105:26 ]
+     │
+ 102 │                 {menuOpen && (
+     │                              ┬
+     │                              ╰── Opened here
+     │
+ 105 │                     <div className="absolute top-0 left-0 w-full h-full bg-black/70 backdrop-blur-md z-40 flex flex-col items-center justify-center gap-6 text-white text-lg">
+     │                          ────┬────
+     │                              ╰────── `,` or `)` expected
+─────╯
+
+  Plugin: vite:oxc
+  File: E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/src/Test.jsx
+      at transformWithOxc (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:3343:19)
+      at TransformPluginContext.transform (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:3411:26)
+      at EnvironmentPluginContainer.transform (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:30164:51)
+      at async loadAndTransform (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:24512:26)
+      at async viteTransformMiddleware (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:24306:20)
+2:25:29 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css
+2:25:29 pm [vite] Internal server error: Transform failed with 1 error:
+
+[PARSE_ERROR] Error: Expected `,` or `)` but found `{`
+     ╭─[ src/Test.jsx:107:25 ]
+     │
+ 102 │                 {menuOpen && (
+     │                              ┬
+     │                              ╰── Opened here
+     │
+ 107 │                         {/* CLOSE BUTTON */}
+     │                         ┬
+     │                         ╰── `,` or `)` expected
+─────╯
+
+  Plugin: vite:oxc
+  File: E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/src/Test.jsx
+      at transformWithOxc (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:3343:19)
+      at TransformPluginContext.transform (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:3411:26)
+      at EnvironmentPluginContainer.transform (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:30164:51)
+      at async loadAndTransform (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:24512:26)
+      at async viteTransformMiddleware (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:24306:20)
+2:25:32 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css
+2:25:41 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x2)
+2:25:41 pm [vite] Internal server error: Transform failed with 1 error:
+
+[PARSE_ERROR] Error: Expected `,` or `)` but found `{`
+     ╭─[ src/Test.jsx:107:25 ]
+     │
+ 102 │                 {menuOpen && (
+     │                              ┬
+     │                              ╰── Opened here
+     │
+ 107 │                         {/* CLOSE BUTTON */}
+     │                         ┬
+     │                         ╰── `,` or `)` expected
+─────╯
+
+  Plugin: vite:oxc
+  File: E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/src/Test.jsx
+      at transformWithOxc (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:3343:19)
+      at TransformPluginContext.transform (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:3411:26)
+      at EnvironmentPluginContainer.transform (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:30164:51)
+      at async loadAndTransform (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:24512:26)
+      at async viteTransformMiddleware (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:24306:20)
+2:25:51 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css
+2:25:51 pm [vite] Internal server error: Transform failed with 1 error:
+
+[PARSE_ERROR] Error: Expected `,` or `)` but found `{`
+     ╭─[ src/Test.jsx:104:21 ]
+     │
+ 102 │                 {menuOpen && (
+     │                              ┬
+     │                              ╰── Opened here
+     │
+ 104 │                     {/* <div className="absolute top-0 left-0 w-full h-full bg-black/70 backdrop-blur-md z-40 flex flex-col items-center justify-center gap-6 text-white text-lg"> */}
+     │                     ┬
+     │                     ╰── `,` or `)` expected
+─────╯
+
+  Plugin: vite:oxc
+  File: E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/src/Test.jsx
+      at transformWithOxc (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:3343:19)
+      at TransformPluginContext.transform (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:3411:26)
+      at EnvironmentPluginContainer.transform (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:30164:51)
+      at async loadAndTransform (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:24512:26)
+      at async viteTransformMiddleware (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:24306:20)
+2:25:53 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css
+2:25:53 pm [vite] Internal server error: Transform failed with 1 error:
+
+[PARSE_ERROR] Error: Expected `,` or `)` but found `Identifier`
+     ╭─[ src/Test.jsx:104:26 ]
+     │
+ 102 │                 {menuOpen && (
+     │                              ┬
+     │                              ╰── Opened here
+     │
+ 104 │                     <div className="absolute top-0 left-0 w-full h-full bg-black/70 backdrop-blur-md z-40 flex flex-col items-center justify-center gap-6 text-white text-lg">
+     │                          ────┬────
+     │                              ╰────── `,` or `)` expected
+─────╯
+
+  Plugin: vite:oxc
+  File: E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/src/Test.jsx
+      at transformWithOxc (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:3343:19)
+      at TransformPluginContext.transform (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:3411:26)
+      at EnvironmentPluginContainer.transform (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:30164:51)
+      at async loadAndTransform (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:24512:26)
+      at async viteTransformMiddleware (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:24306:20)
+2:26:04 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css
+2:26:04 pm [vite] Internal server error: Transform failed with 1 error:
+
+[PARSE_ERROR] Error: Expected `,` or `)` but found `Identifier`
+     ╭─[ src/Test.jsx:105:26 ]
+     │
+ 102 │                 {menuOpen && (
+     │                              ┬
+     │                              ╰── Opened here
+     │
+ 105 │                     <div className="absolute top-0 left-0 w-full h-full bg-black/70 backdrop-blur-md z-40 flex flex-col items-center justify-center gap-6 text-white text-lg">
+     │                          ────┬────
+     │                              ╰────── `,` or `)` expected
+─────╯
+
+  Plugin: vite:oxc
+  File: E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/src/Test.jsx
+      at transformWithOxc (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:3343:19)
+      at TransformPluginContext.transform (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:3411:26)
+      at EnvironmentPluginContainer.transform (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:30164:51)
+      at async loadAndTransform (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:24512:26)
+      at async viteTransformMiddleware (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:24306:20)
+2:26:06 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css
+2:26:06 pm [vite] Internal server error: Transform failed with 1 error:
+
+[PARSE_ERROR] Error: Expected `,` or `)` but found `Identifier`
+     ╭─[ src/Test.jsx:105:22 ]
+     │
+ 102 │                 {menuOpen && (
+     │                              ┬
+     │                              ╰── Opened here
+     │
+ 105 │                 <div className="absolute top-0 left-0 w-full h-full bg-black/70 backdrop-blur-md z-40 flex flex-col items-center justify-center gap-6 text-white text-lg">
+     │                      ────┬────
+     │                          ╰────── `,` or `)` expected
+─────╯
+
+  Plugin: vite:oxc
+  File: E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/src/Test.jsx
+      at transformWithOxc (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:3343:19)
+      at TransformPluginContext.transform (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:3411:26)
+      at EnvironmentPluginContainer.transform (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:30164:51)
+      at async loadAndTransform (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:24512:26)
+      at async viteTransformMiddleware (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:24306:20)
+2:26:14 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css
+2:26:14 pm [vite] Internal server error: Transform failed with 1 error:
+
+[PARSE_ERROR] Error: Expected `,` or `)` but found `{`
+     ╭─[ src/Test.jsx:108:25 ]
+     │
+ 102 │                 {menuOpen && (
+     │                              ┬
+     │                              ╰── Opened here
+     │
+ 108 │                         {/* CLOSE BUTTON */}
+     │                         ┬
+     │                         ╰── `,` or `)` expected
+─────╯
+
+  Plugin: vite:oxc
+  File: E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/src/Test.jsx
+      at transformWithOxc (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:3343:19)
+      at TransformPluginContext.transform (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:3411:26)
+      at EnvironmentPluginContainer.transform (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:30164:51)
+      at async loadAndTransform (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:24512:26)
+      at async viteTransformMiddleware (file:///E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/node_modules/vite/dist/node/chunks/node.js:24306:20)
+2:26:17 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css
+2:26:21 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x2)
+2:26:25 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x3)
+2:26:32 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x4)
+2:26:37 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x5)
+2:26:46 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x6)
+2:26:48 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x7)
+2:27:11 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x8)
+2:27:18 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x9)
+2:27:59 pm [vite] (client) hmr update /src/Test.jsx, /src/index.css (x10)
+2:29:11 pm [vite] (client) hmr update /src/App.jsx, /src/index.css
+2:29:12 pm [vite] (client) hmr update /src/App.jsx, /src/index.css (x2)
+2:37:28 pm [vite] (client) hmr update /src/index.css
+2:37:28 pm [vite] (client) hmr update /src/index.css (x2)
+2:37:28 pm [vite] (client) hmr update /src/index.css (x3)
+2:37:28 pm [vite] (client) hmr update /src/index.css (x4)
+2:37:28 pm [vite] (client) hmr update /src/index.css (x5)
+2:37:28 pm [vite] (client) hmr update /src/index.css (x6)
+2:37:28 pm [vite] (client) hmr update /src/index.css (x7)
+2:37:28 pm [vite] (client) hmr update /src/index.css (x8)
+2:37:28 pm [vite] (client) hmr update /src/index.css (x9)
+2:37:28 pm [vite] (client) hmr update /src/index.css (x10)
+2:37:28 pm [vite] (client) hmr update /src/index.css (x11)
+2:37:35 pm [vite] (client) hmr update /src/index.css (x12)
+2:37:35 pm [vite] (client) hmr update /src/index.css (x13)
+2:37:35 pm [vite] (client) hmr update /src/index.css (x14)
+2:37:35 pm [vite] (client) hmr update /src/index.css (x15)
+2:37:35 pm [vite] (client) hmr update /src/index.css (x16)
+2:37:35 pm [vite] (client) hmr update /src/index.css (x17)
+2:37:35 pm [vite] (client) hmr update /src/index.css (x18)
+2:37:35 pm [vite] (client) hmr update /src/index.css (x19)
+2:37:35 pm [vite] (client) hmr update /src/index.css (x20)
+2:37:35 pm [vite] (client) hmr update /src/index.css (x21)
+2:37:35 pm [vite] (client) hmr update /src/index.css (x22)
+2:37:35 pm [vite] (client) hmr update /src/index.css (x23)
+2:37:35 pm [vite] (client) hmr update /src/index.css (x24)
+2:37:35 pm [vite] (client) hmr update /src/index.css (x25)
+2:37:35 pm [vite] (client) hmr update /src/index.css (x26)
+2:37:35 pm [vite] (client) hmr update /src/index.css (x27)
+2:37:35 pm [vite] (client) hmr update /src/index.css (x28)
+2:37:35 pm [vite] (client) hmr update /src/index.css (x29)
+2:37:35 pm [vite] (client) hmr update /src/index.css (x30)
+2:37:35 pm [vite] (client) hmr update /src/index.css (x31)
+2:37:35 pm [vite] (client) hmr update /src/index.css (x32)
+2:37:35 pm [vite] (client) hmr update /src/index.css (x33)
+2:37:35 pm [vite] (client) hmr update /src/index.css (x34)
+2:37:35 pm [vite] (client) hmr update /src/index.css (x35)
+\^C
+E:\MURALI\REACT-JS-CRASH-COURSE\figma-react>
+
+E:\MURALI\REACT-JS-CRASH-COURSE\figma-react>
+
+E:\MURALI\REACT-JS-CRASH-COURSE\figma-react>
+
+E:\MURALI\REACT-JS-CRASH-COURSE\figma-react>git add .
+
+E:\MURALI\REACT-JS-CRASH-COURSE\figma-react>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   SCREENS/DEPLOY-1.png
+        new file:   SCREENS/DEPLOY-2.png
+        new file:   SCREENS/DEPLOY-3.png
+        new file:   SCREENS/DEPLOY-4.png
+        new file:   SCREENS/DEPLOY-RENDER-COM.txt
+
+
+E:\MURALI\REACT-JS-CRASH-COURSE\figma-react>git commit -m "deployed"
+[main 0afc9d0] deployed
+ 5 files changed, 253 insertions(+)
+ create mode 100644 SCREENS/DEPLOY-1.png
+ create mode 100644 SCREENS/DEPLOY-2.png
+ create mode 100644 SCREENS/DEPLOY-3.png
+ create mode 100644 SCREENS/DEPLOY-4.png
+ create mode 100644 SCREENS/DEPLOY-RENDER-COM.txt
+
+E:\MURALI\REACT-JS-CRASH-COURSE\figma-react>

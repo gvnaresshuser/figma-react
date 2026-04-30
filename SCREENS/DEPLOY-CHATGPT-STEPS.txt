@@ -1,0 +1,192 @@
+Great — here’s a clean, **end-to-end flow** to get your React app from
+`E:\MURALI\REACT-JS-CRASH-COURSE\figma-react` → GitHub → Render (static site).
+
+---
+
+# 🚀 PART 1: Push your project to GitHub
+
+## ✅ 1. Open terminal in your project folder
+
+Go to your folder:
+
+```bash
+cd E:\MURALI\REACT-JS-CRASH-COURSE\figma-react
+```
+
+---
+
+## ✅ 2. Initialize Git
+
+```bash
+git init
+```
+
+---
+
+## ✅ 3. Add files
+
+```bash
+git add .
+```
+
+---
+
+## ✅ 4. Commit
+
+```bash
+git commit -m "Initial commit - React project"
+```
+
+---
+
+## ✅ 5. Create GitHub repo
+
+Go to: GitHub
+
+* Click **New Repository**
+* Name: `figma-react`
+* Click **Create Repository**
+
+---
+
+## ✅ 6. Connect local → GitHub
+
+Copy repo URL (example):
+
+```bash
+git remote add origin https://github.com/your-username/figma-react.git
+```
+
+---
+
+## ✅ 7. Push code
+
+```bash
+git branch -M main
+git push -u origin main
+```
+
+---
+
+# 🚀 PART 2: Deploy on Render (Static Site)
+
+Go to: Render
+
+---
+
+## ✅ 1. Create new service
+
+* Click **New +**
+* Select **Static Site**
+
+---
+
+## ✅ 2. Connect GitHub
+
+* Authorize Render with GitHub
+* Select your repo: `figma-react`
+
+---
+
+## ✅ 3. Configure build settings
+
+For React (Vite or CRA):
+
+### If Vite:
+
+```
+Build Command: npm run build
+Publish Directory: dist
+```
+
+### If Create React App:
+
+```
+Build Command: npm run build
+Publish Directory: build
+```
+
+---
+
+## ✅ 4. Click **Deploy**
+
+Render will:
+
+* install dependencies
+* build your project
+* give you a live URL 🎉
+
+---
+
+# ⚠️ Important checks
+
+## 🔹 1. package.json must have:
+
+```json
+"scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "preview": "vite preview"
+}
+```
+
+---
+
+## 🔹 2. If images not loading
+
+Make sure paths are:
+
+```js
+src="/assets/image.png"   ❌ (may fail)
+```
+
+Instead use:
+
+```js
+src="/assets/image.png"   ✅ (only if inside public folder)
+```
+
+OR:
+
+```js
+import img from "./assets/image.png";
+<img src={img} />
+```
+
+---
+
+## 🔹 3. Add .gitignore (if missing)
+
+```bash
+node_modules
+dist
+.env
+```
+
+---
+
+# 🎯 Final Result
+
+After deployment you’ll get:
+
+```
+https://figma-react.onrender.com
+```
+
+---
+
+# 🔥 Pro Tips
+
+* Every `git push` → auto redeploy 🚀
+* Use `public/assets` for images
+* Keep repo clean (no node_modules)
+
+---
+
+If you want, I can:
+
+* check your project before deploy
+* fix image paths (very common issue)
+* or set custom domain on Render
+
+Just tell 👍
