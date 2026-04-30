@@ -1,0 +1,253 @@
+🚀 PART 1: Push your project to GitHub
+✅ 1. Open terminal in your project folder
+
+Go to your folder:
+
+cd E:\MURALI\REACT-JS-CRASH-COURSE\figma-react
+✅ 2. Initialize Git
+git init
+
+✅ 3. Add files
+git add .
+
+✅ 4. Commit
+git commit -m "Initial commit - React project"
+
+✅ 5. Create GitHub repo
+
+gvnaresshuser/figma-react
+
+Go to: GitHub
+
+Click New Repository
+Name: figma-react
+Click Create Repository
+✅ 6. Connect local → GitHub
+
+Copy repo URL (example):
+
+git remote add origin https://github.com/your-username/figma-react.git
+git remote add origin https://github.com/gvnaresshuser/figma-react.git
+
+✅ 7. Push code
+git branch -M main
+git push -u origin main
+
+
+
+echo "# figma-react" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/gvnaresshuser/figma-react.git
+git push -u origin main
+
+
+git remote add origin https://github.com/gvnaresshuser/figma-react.git
+git branch -M main
+git push -u origin main
+
+
+git remote add origin https://github.com/your-username/figma-react.git
+git remote add origin https://github.com/gvnaresshuser/figma-react.git
+
+==================================================================================================
+https://dashboard.render.com/
+Goolge login
+gvnaressh@gmail.com
+
+🚀 PART 2: Deploy on Render (Static Site)
+
+Go to: Render
+
+✅ 1. Create new service
+Click New +
+Select Static Site
+
+✅ 2. Connect GitHub
+Authorize Render with GitHub
+Select your repo: figma-react
+
+✅ 3. Configure build settings
+
+For React (Vite or CRA):
+
+If Vite:
+Build Command: npm run build
+
+Publish Directory: dist
+
+If Create React App:
+Build Command: npm run build
+
+Publish Directory: build
+
+✅ 4. Click Deploy
+
+Render will:
+
+install dependencies
+build your project
+give you a live URL 🎉
+
+⚠️ Important checks
+🔹 1. package.json must have:
+"scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "preview": "vite preview"
+}
+
+🔹 2. If images not loading
+
+Make sure paths are:
+
+src="/assets/image.png"   ❌ (may fail)
+
+Instead use:
+
+src="/assets/image.png"   ✅ (only if inside public folder)
+
+OR:
+
+import img from "./assets/image.png";
+<img src={img} />
+🔹 3. Add .gitignore (if missing)
+node_modules
+dist
+.env
+🎯 Final Result
+
+After deployment you’ll get:
+
+https://figma-react.onrender.com
+🔥 Pro Tips
+Every git push → auto redeploy 🚀
+Use public/assets for images
+Keep repo clean (no node_modules)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Microsoft Windows [Version 10.0.26100.8246]
+(c) Microsoft Corporation. All rights reserved.
+
+E:\MURALI\REACT-JS-CRASH-COURSE\figma-react>git init
+Initialized empty Git repository in E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/.git/
+
+E:\MURALI\REACT-JS-CRASH-COURSE\figma-react>git add .
+warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'eslint.config.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'index.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'package-lock.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'package.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'public/icons.svg', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/App.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/App.jsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/assets/vite.svg', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main.jsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'vite.config copy.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'vite.config.js', LF will be replaced by CRLF the next time Git touches it
+
+E:\MURALI\REACT-JS-CRASH-COURSE\figma-react>git commit -m "Initial commit - React project"
+[master (root-commit) c75ae0f] Initial commit - React project
+ 67 files changed, 6954 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 README.md
+ create mode 100644 SCREENS/DESIGN-FIGMA-TEMPLATE.txt
+ create mode 100644 SCREENS/INFO.txt
+ create mode 100644 SCREENS/RULES-MORE.txt
+ create mode 100644 SCREENS/RULES.txt
+ create mode 100644 SCREENS/STEPS.txt
+ create mode 100644 SCREENS/SVG.txt
+ create mode 100644 SCREENS/figma_to_react.pdf
+ create mode 100644 SCREENS/vector.txt
+ create mode 100644 eslint.config.js
+ create mode 100644 figma-react-30-04-2026.zip
+ create mode 100644 index.html
+ create mode 100644 jsconfig.json
+ create mode 100644 package-lock.json
+ create mode 100644 package.json
+ create mode 100644 public/assets/Vector2.svg
+ create mode 100644 public/assets/aerial-view-blue-sea-boat-1.png
+ create mode 100644 public/assets/image-2.png
+ create mode 100644 public/assets/image-3.png
+ create mode 100644 public/assets/unsplash_GNdp2Q4VZjw.jpg
+ create mode 100644 public/assets/unsplash_MdTtpxGlrz8.jpg
+ create mode 100644 public/assets/unsplash_rC2_aH8lAlU.jpg
+ create mode 100644 public/favicon.svg
+ create mode 100644 public/icons.svg
+ create mode 100644 src/App.css
+ create mode 100644 src/App.jsx
+ create mode 100644 src/AwesomeComponent.jsx
+ create mode 100644 src/FigmaToReactConverter copy.jsx
+ create mode 100644 src/FigmaToReactConverter.jsx
+ create mode 100644 src/Test.jsx
+ create mode 100644 src/TestComp.jsx
+ create mode 100644 src/Vector2.jsx
+ create mode 100644 src/assets/hero.png
+ create mode 100644 src/assets/react.svg
+ create mode 100644 src/assets/vite.svg
+ create mode 100644 src/components/Background/Boat.jsx
+ create mode 100644 src/components/Background/SandOverlay.jsx
+ create mode 100644 src/components/Background/Waves.jsx
+ create mode 100644 src/components/Cards/CardList.jsx
+ create mode 100644 src/components/Cards/CardsSection.jsx
+ create mode 100644 src/components/Cards/DestinationCard.jsx
+ create mode 100644 src/components/Cards/SectionHeader.jsx
+ create mode 100644 src/components/DatePickerInput copy.jsx
+ create mode 100644 src/components/DatePickerInput.jsx
+ create mode 100644 src/components/Details/BookingCard.jsx
+ create mode 100644 src/components/Details/DetailsHero.jsx
+ create mode 100644 src/components/Details/DetailsInfo.jsx
+ create mode 100644 src/components/Hero/Categories.jsx
+ create mode 100644 src/components/Hero/HeroBackground.jsx
+ create mode 100644 src/components/Hero/HeroContent.jsx
+ create mode 100644 src/components/Hero/HeroSection.jsx
+ create mode 100644 src/components/Hero/SearchBar/DateInput.jsx
+ create mode 100644 src/components/Hero/SearchBar/GuestsInput.jsx
+ create mode 100644 src/components/Hero/SearchBar/LocationInput.jsx
+ create mode 100644 src/components/Hero/SearchBar/SearchBar copy 2.jsx
+ create mode 100644 src/components/Hero/SearchBar/SearchBar copy.jsx
+ create mode 100644 src/components/Hero/SearchBar/SearchBar.jsx
+ create mode 100644 src/components/Hero/SearchBar/SearchButton.jsx
+ create mode 100644 src/components/Hero/TitleSection.jsx
+ create mode 100644 src/components/Navbar/Navbar.jsx
+ create mode 100644 src/index.css
+ create mode 100644 src/main.jsx
+ create mode 100644 src/pages/Details.jsx
+ create mode 100644 src/pages/Home.jsx
+ create mode 100644 vite.config copy.js
+ create mode 100644 vite.config.js
+
+E:\MURALI\REACT-JS-CRASH-COURSE\figma-react>git remote add origin https://github.com/gvnaresshuser/figma-react.git
+
+E:\MURALI\REACT-JS-CRASH-COURSE\figma-react>git branch -M main
+
+E:\MURALI\REACT-JS-CRASH-COURSE\figma-react>git push -u origin main
+Enumerating objects: 77, done.
+Counting objects: 100% (77/77), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (75/75), done.
+Writing objects: 100% (77/77), 10.16 MiB | 1.23 MiB/s, done.
+Total 77 (delta 6), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (6/6), done.
+To https://github.com/gvnaresshuser/figma-react.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+E:\MURALI\REACT-JS-CRASH-COURSE\figma-react>
