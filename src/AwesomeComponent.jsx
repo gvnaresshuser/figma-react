@@ -2,17 +2,42 @@ import { useState } from "react";
 import { User, Calendar, Settings } from "lucide-react";
 import { ChevronRight, ChevronLeft, ChevronDown, ChevronUp } from "lucide-react";
 import Swal from "sweetalert2";
+import DatePickerInput from "./components/DatePickerInput";
+import GuestsDropdown from "./components/GuestsDropdown";
 //https://www.figma.com/design/Ui9xmqM4aGfQbJHj6PR8I1/Travel-App--Community-?node-id=0-1&t=SkzrjiKiKjnbOqhs-1
 const AwesomeComponent = () => {
-
+    const today = new Date();
+    const tomorrow = new Date();
+    tomorrow.setDate(today.getDate() + 1);
+    const [checkIn, setCheckIn] = useState(today);
+    const [checkOut, setCheckOut] = useState(tomorrow);
+    const [guests, setGuests] = useState(2);
     const [menuOpen, setMenuOpen] = useState(false);
+
+    const formatDate = (date) => {
+        if (!date) return "Not selected";
+        return new Date(date).toLocaleDateString("en-GB", {
+            day: "2-digit",
+            month: "short",
+            year: "numeric",
+        });
+    };
+
+    const getDays = (start, end) => {
+        if (!start || !end) return 0;
+
+        const diffTime = end.getTime() - start.getTime();
+        const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+
+        // ✅ ensure at least 1 day
+        return diffDays === 0 ? 1 : diffDays;
+    };
+
     const items = [
         { title: "Accommodation", value: "6730 Luna Land", icon: Settings },
         { title: "Check In", value: "12 Aug 2026", icon: Calendar },
         { title: "Check Out", value: "18 Aug 2026", icon: Calendar },
-        { title: "Guests", value: "2 Adults", icon: User },
         { title: "Guests", value: "2 Adults", icon: ChevronDown },
-        //{ title: "Button", value: "Search", icon: ChevronDown },
     ];
 
     const cards = [
@@ -171,7 +196,7 @@ const AwesomeComponent = () => {
 
                     <div className="max-w-[600px]">
 
-                        {/* Tags */}                        
+                        {/* Tags */}
                         <div className="flex items-center gap-2 text-white text-[10px] md:text-xs mb-3">
                             {tags.map((tag, index) => (
                                 <div key={index} className="flex items-center gap-2">
@@ -214,7 +239,7 @@ const AwesomeComponent = () => {
                                 {cards.map((card, index) => (
                                     <div
                                         key={index}
-                                        className="
+                                        className="                                        
                                     min-w-[130px] 
                                     sm:min-w-[140px] 
                                     md:min-w-0 md:w-[180px] lg:w-[140px]
@@ -247,30 +272,65 @@ const AwesomeComponent = () => {
                             <div className="flex flex-col md:flex-row items-center gap-3 md:gap-0">
 
                                 {/* INPUT SECTION */}
-                                <div className="flex flex-col md:flex-row flex-1 bg-white rounded-xl overflow-hidden">
+                                <div className="flex flex-col md:flex-row flex-1 bg-white 
+                                rounded-xl overflow-visible">
 
                                     {items.map((item, index) => {
                                         const Icon = item.icon;
+                                        const isCalendar = Icon === Calendar;
+                                        const isGuests = Icon === ChevronDown;
 
                                         return (
                                             <div
                                                 key={index}
                                                 className="flex items-center gap-3 px-4 py-2 md:py-3 flex-1 relative"
                                             >
-                                                <Icon size={18} className="text-gray-400" />
+                                                {isCalendar ? (
+                                                    <DatePickerInput
+                                                        label={item.title}
+                                                        value={item.title === "Check In" ? checkIn : checkOut}
+                                                        onChange={(date) => {
+                                                            if (item.title === "Check In") {
+                                                                setCheckIn(date);
 
-                                                <div>
-                                                    <div className="text-[10px] text-gray-500">
-                                                        {item.title}
-                                                    </div>
-                                                    <div className="text-xs font-medium text-gray-700">
-                                                        {item.value}
-                                                    </div>
-                                                </div>
+                                                                // auto fix checkout if needed
+                                                                if (checkOut < date) {
+                                                                    setCheckOut(date);
+                                                                }
+                                                            } else {
+                                                                setCheckOut(date);
+                                                            }
+                                                        }}
+                                                        minDate={
+                                                            item.title === "Check Out"
+                                                                ? checkIn        // ✅ restrict checkout
+                                                                : new Date()     // ✅ restrict past dates
+                                                        }
+                                                    />
+                                                ) : isGuests ? (
+                                                    <GuestsDropdown
+                                                        label={item.title}
+                                                        guests={guests}
+                                                        setGuests={setGuests}
+                                                    />
+                                                ) : (
+                                                    <>
+                                                        <Icon size={18} className="text-gray-400" />
 
-                                                {/* Divider only desktop */}
+                                                        <div>
+                                                            <div className="text-[10px] text-gray-500">
+                                                                {item.title}
+                                                            </div>
+                                                            <div className="text-xs font-medium text-gray-700">
+                                                                {item.value}
+                                                            </div>
+                                                        </div>
+                                                    </>
+                                                )}
+
+                                                {/* Divider */}
                                                 {index !== items.length - 1 && (
-                                                    <div className="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 h-8 w-[1px] bg-gray-200" />
+                                                    <div className="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 h-8 w-[1px] bg-gray-200 pointer-events-none" />
                                                 )}
                                             </div>
                                         );
@@ -278,19 +338,50 @@ const AwesomeComponent = () => {
                                 </div>
 
                                 {/* BUTTON */}
-                                <button className="ml-2 w-full md:w-[140px] h-[45px] 
+                                <button
+                                    onClick={() => {
+                                        if (checkIn > checkOut) {
+                                            Swal.fire({
+                                                title: "Invalid Dates ❌",
+                                                text: "Check-out date cannot be earlier than check-in date.",
+                                                icon: "error",
+                                                confirmButtonColor: "#E7AC72",
+                                            });
+                                            return;
+                                        }
+
+                                        const days = getDays(checkIn, checkOut);
+
+                                        Swal.fire({
+                                            title: "Your Selection ✨",
+                                            background: "linear-gradient(to right, #e4a97b, #4CAF50, #1E88E5)",
+                                            color: "#ffffff",
+                                            html: `
+                                            <div style="text-align:left">
+                                                <p><b>Check In:</b> ${formatDate(checkIn)}</p>
+                                                <p><b>Check Out:</b> ${formatDate(checkOut)}</p>
+                                                <p><b>Guests:</b> ${guests}</p>
+                                                <p><b>Duration:</b> ${days} Day${days !== 1 ? "s" : ""}</p>
+                                            </div>
+                                        `,
+                                            icon: "info",
+                                            confirmButtonColor: "#E7AC72",
+                                        });
+                                    }}
+                                    className="ml-2 w-full md:w-[140px] h-[45px] 
                                 bg-[#E7AC72] text-white rounded-xl text-sm font-semibold 
-                                hover:bg-[#d9985e] transition flex items-center justify-center">
+                                hover:bg-[#d9985e] transition flex items-center justify-center"
+                                >
                                     Search
                                 </button>
                             </div>
-                        </div>        
+                        </div>
                     </div>
-                    
+
                     {/* ------------------------------------------------------------------------------------- */}
-                   
+
                 </div>
-          
+
 
                 {/* SVG MASK */}
                 <svg width="0" height="0">
@@ -346,10 +437,10 @@ const AwesomeComponent = () => {
                 />
             </div>
 
-           
+
             {/* FOOTER */}
             <footer className="w-full bg-gradient-to-r from-[#e4a97b] via-[#4CAF50] to-[#1E88E5] 
-text-white py-3 px-4">
+                               text-white py-3 px-4">
                 <div className="max-w-[1100px] mx-auto flex justify-center items-center text-xs md:text-sm gap-2">
                     <span>© 2026</span>
                     <span className="font-medium">www.nickelfox.com</span>
