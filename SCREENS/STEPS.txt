@@ -81,3 +81,37 @@ E:\MURALI\REACT-JS-CRASH-COURSE\figma-react>git commit -m "updated dates days gu
  create mode 100644 src/components/GuestsDropdown.jsx
 
 E:\MURALI\REACT-JS-CRASH-COURSE\figma-react>
+
+git push
+
+=============================================================================
+
+
+E:\MURALI\REACT-JS-CRASH-COURSE\figma-react>git add .
+
+E:\MURALI\REACT-JS-CRASH-COURSE\figma-react>git status
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   SCREENS/STEPS.txt
+
+
+E:\MURALI\REACT-JS-CRASH-COURSE\figma-react>git commit -m "steps altered"
+[main 038c723] steps altered
+ 1 file changed, 27 insertions(+), 1 deletion(-)
+
+E:\MURALI\REACT-JS-CRASH-COURSE\figma-react>git push
+Enumerating objects: 32, done.
+Counting objects: 100% (32/32), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (25/25), done.
+Writing objects: 100% (25/25), 939.40 KiB | 14.23 MiB/s, done.
+Total 25 (delta 12), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (12/12), completed with 6 local objects.
+To https://github.com/gvnaresshuser/figma-react.git
+   c75ae0f..038c723  main -> main
+
+E:\MURALI\REACT-JS-CRASH-COURSE\figma-react>

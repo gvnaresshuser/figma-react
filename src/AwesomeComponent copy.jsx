@@ -1,10 +1,9 @@
 import { useState } from "react";
-import { User, Calendar, Settings, MapPin } from "lucide-react";
+import { User, Calendar, Settings } from "lucide-react";
 import { ChevronRight, ChevronLeft, ChevronDown, ChevronUp } from "lucide-react";
 import Swal from "sweetalert2";
 import DatePickerInput from "./components/DatePickerInput";
 import GuestsDropdown from "./components/GuestsDropdown";
-import AccommodationDropdown from "./components/AccommodationDropdown";
 //https://www.figma.com/design/Ui9xmqM4aGfQbJHj6PR8I1/Travel-App--Community-?node-id=0-1&t=SkzrjiKiKjnbOqhs-1
 const AwesomeComponent = () => {
     const today = new Date();
@@ -14,7 +13,6 @@ const AwesomeComponent = () => {
     const [checkOut, setCheckOut] = useState(tomorrow);
     const [guests, setGuests] = useState(2);
     const [menuOpen, setMenuOpen] = useState(false);
-    const [accommodation, setAccommodation] = useState("6730 Luna Land");
 
     const formatDate = (date) => {
         if (!date) return "Not selected";
@@ -35,24 +33,8 @@ const AwesomeComponent = () => {
         return diffDays === 0 ? 1 : diffDays;
     };
 
-    /*    const items = [
-           { title: "Accommodation", value: "6730 Luna Land", icon: Settings },
-           { title: "Check In", value: "12 Aug 2026", icon: Calendar },
-           { title: "Check Out", value: "18 Aug 2026", icon: Calendar },
-           { title: "Guests", value: "2 Adults", icon: ChevronDown },
-       ]; */
     const items = [
-        {
-            title: "Accommodation",
-            value: "6730 Luna Land",
-            options: [
-                "6730 Luna Land",
-                "Ocean View Resort",
-                "Mountain Cabin",
-                "City Hotel Deluxe"
-            ],
-            icon: Settings
-        },
+        { title: "Accommodation", value: "6730 Luna Land", icon: Settings },
         { title: "Check In", value: "12 Aug 2026", icon: Calendar },
         { title: "Check Out", value: "18 Aug 2026", icon: Calendar },
         { title: "Guests", value: "2 Adults", icon: ChevronDown },
@@ -297,24 +279,13 @@ const AwesomeComponent = () => {
                                         const Icon = item.icon;
                                         const isCalendar = Icon === Calendar;
                                         const isGuests = Icon === ChevronDown;
-                                        const isAccommodation = item.title === "Accommodation";
 
                                         return (
                                             <div
                                                 key={index}
                                                 className="flex items-center gap-3 px-4 py-2 md:py-3 flex-1 relative"
                                             >
-                                                {isAccommodation ? (
-                                                    <>
-                                                        <MapPin size={18} className="text-gray-400" />
-                                                        <AccommodationDropdown
-                                                            label={item.title}
-                                                            value={accommodation}
-                                                            setValue={setAccommodation}
-                                                            options={item.options}
-                                                        />
-                                                    </>
-                                                ) : isCalendar ? (
+                                                {isCalendar ? (
                                                     <DatePickerInput
                                                         label={item.title}
                                                         value={item.title === "Check In" ? checkIn : checkOut}
@@ -386,12 +357,11 @@ const AwesomeComponent = () => {
                                             background: "linear-gradient(to right, #e4a97b, #4CAF50, #1E88E5)",
                                             color: "#ffffff",
                                             html: `
-                                             <div style="text-align:left; font-size:14px; line-height:1.6;">
-                                                <p>📅 <b>Check In:</b> ${formatDate(checkIn)}</p>
-                                                <p>📅 <b>Check Out:</b> ${formatDate(checkOut)}</p>
-                                                <p>👥 <b>Guests:</b> ${guests}</p>
-                                                <p>📍 <b>Accommodation:</b> ${accommodation}</p>
-                                                <p>⏳ <b>Duration:</b> ${days} Day${days !== 1 ? "s" : ""}</p>
+                                            <div style="text-align:left">
+                                                <p><b>Check In:</b> ${formatDate(checkIn)}</p>
+                                                <p><b>Check Out:</b> ${formatDate(checkOut)}</p>
+                                                <p><b>Guests:</b> ${guests}</p>
+                                                <p><b>Duration:</b> ${days} Day${days !== 1 ? "s" : ""}</p>
                                             </div>
                                         `,
                                             icon: "info",
