@@ -55,3 +55,29 @@ src/
  │    ├── Home.jsx
  ├── assets/
  ├── App.jsx
+ 
+ 
+ 
+ 
+E:\MURALI\REACT-JS-CRASH-COURSE\figma-react>git add .
+
+E:\MURALI\REACT-JS-CRASH-COURSE\figma-react>git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   src/AwesomeComponent.jsx
+        deleted:    src/components/DatePickerInput copy.jsx
+        modified:   src/components/DatePickerInput.jsx
+        new file:   src/components/GuestsDropdown.jsx
+
+
+E:\MURALI\REACT-JS-CRASH-COURSE\figma-react>git commit -m "updated dates days guests"
+[main b1aa2c1] updated dates days guests
+ 4 files changed, 216 insertions(+), 93 deletions(-)
+ delete mode 100644 src/components/DatePickerInput copy.jsx
+ create mode 100644 src/components/GuestsDropdown.jsx
+
+E:\MURALI\REACT-JS-CRASH-COURSE\figma-react>
