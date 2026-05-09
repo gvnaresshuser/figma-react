@@ -34,13 +34,6 @@ const AwesomeComponent = () => {
         // ✅ ensure at least 1 day
         return diffDays === 0 ? 1 : diffDays;
     };
-
-    /*    const items = [
-           { title: "Accommodation", value: "6730 Luna Land", icon: Settings },
-           { title: "Check In", value: "12 Aug 2026", icon: Calendar },
-           { title: "Check Out", value: "18 Aug 2026", icon: Calendar },
-           { title: "Guests", value: "2 Adults", icon: ChevronDown },
-       ]; */
     const items = [
         {
             title: "Accommodation",
@@ -104,12 +97,11 @@ const AwesomeComponent = () => {
     return (
         <div className="w-full max-w-[1440px] mx-auto px-4 mt-4">
 
-            {/* <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] rounded-[10px] overflow-hidden"> */}
             <div className="
-  relative w-full 
-  min-h-[800px] sm:min-h-[800px] md:h-[500px] lg:h-[600px]
-  rounded-t-[10px] overflow-hidden
-">
+                    relative w-full 
+                    min-h-[800px] sm:min-h-[800px] md:h-[500px] lg:h-[600px]
+                    rounded-t-[10px] overflow-hidden
+                    ">
                 {/* LOGO (Top-left fixed) */}
                 <div className="absolute top-[10px] left-[10px] z-30">
                     <img
@@ -120,7 +112,6 @@ const AwesomeComponent = () => {
                 </div>
                 {/* NAVBAR */}
                 <div className="absolute top-4 left-1/2 -translate-x-1/2 w-full max-w-[1100px] px-4 z-20 flex justify-end items-center">
-
 
                     {/* DESKTOP MENU */}
                     <div className="hidden md:flex items-center gap-6 text-white">

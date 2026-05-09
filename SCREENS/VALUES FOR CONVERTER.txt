@@ -1,0 +1,124 @@
+/* Thumbnail */
+
+position: relative;
+width: 1600px;
+height: 960px;
+
+background: #000000;
+
+<div className="w-full max-w-[1600px] aspect-[1600/960] min-h-screen mx-auto overflow-hidden relative bg-[#000000]">
+
+
+/* Content */
+
+position: absolute;
+width: 545px;
+height: 490.27px;
+left: 105px;
+top: 155px;
+
+<div className="absolute left-[6.56%] top-[16.15%] w-[34.06%] h-[51.07%]">
+
+
+/* Group 1 */
+
+position: absolute;
+width: 131.76px;
+height: 119.82px;
+left: 410px;
+top: 155px;
+
+410
+155
+<div className="absolute left-0 top-0 w-[131.76px] h-[119.82px]">
+
+
+/* Vector */ big
+
+position: absolute;
+left: 25.62%;
+right: 68.66%;
+top: 16.15%;
+bottom: 74.32%;
+
+background: #FFFFFF;
+transform: rotate(7.51deg);
+
+Parent LEFT = 410
+Parent TOP  = 155
+
+<div className="absolute bg-[#ffffff] rotate-[7.51deg] origin-center">
+
+curve
+/* Vector 1 */
+
+position: absolute;
+width: 24px;
+height: 21px;
+left: 513px;
+top: 219px;
+
+border: 3px solid #49C4DD;
+transform: rotate(15.58deg);
+
+Parent LEFT = 410
+Parent TOP  = 155
+
+<div className="absolute left-[103px] top-[64px] w-[24px] h-[21px] border-[3px] border-[#49c4dd] rotate-[15.58deg] origin-center">
+
+
+/* Vector */ small
+
+position: absolute;
+left: 29.12%;
+right: 67.71%;
+top: 22.71%;
+bottom: 72.02%;
+
+background: #FFFFFF;
+transform: rotate(7.51deg);
+
+LEFT = 0
+TOP  = 0
+WIDTH = 131
+HEIGHT = 119
+
+<div className="absolute left-[29px] top-[23px] bg-[#ffffff] rotate-[7.51deg] origin-center">
+
+
+Thumbnail
+ Content
+  Group
+   Vector 1
+   Vector 2
+   Curve
+   
+   
+   /* Traveler Landing Page & Mobile App */
+
+position: absolute;
+width: 545px;
+height: 279px;
+left: 105px;
+top: 210px;
+
+font-family: 'Nunito';
+font-style: normal;
+font-weight: 900;
+font-size: 68px;
+line-height: 93px;
+
+color: #FFFFFF;
+
+=========================================================
+If Figma gives:
+left: %
+top: %
+
+→ use group width/height.
+
+If Figma gives:
+left: 513px
+top: 219px
+
+→ subtract parent coordinates.

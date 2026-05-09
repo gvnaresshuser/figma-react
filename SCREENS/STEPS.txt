@@ -13,6 +13,9 @@ npm install react-router-dom
 npm install react-datepicker
 npm install lucide-react
 npm install sweetalert2
+npm i react-icons
+
+https://react-icons.github.io/react-icons/
 =============================================================
 GOOGLE SEARCH
 react js vite with tailwind css
@@ -115,3 +118,73 @@ To https://github.com/gvnaresshuser/figma-react.git
    c75ae0f..038c723  main -> main
 
 E:\MURALI\REACT-JS-CRASH-COURSE\figma-react>
+======================================================================
+
+E:\MURALI\REACT-JS-CRASH-COURSE\figma-react>git add .
+
+E:\MURALI\REACT-JS-CRASH-COURSE\figma-react>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   SCREENS/STEPS.txt
+        new file:   src/AwesomeComponent copy.jsx
+        modified:   src/AwesomeComponent.jsx
+        new file:   src/components/AccommodationDropdown.jsx
+
+
+E:\MURALI\REACT-JS-CRASH-COURSE\figma-react>git commit -m "locations added"
+[main 78cd992] locations added
+ 4 files changed, 579 insertions(+), 8 deletions(-)
+ create mode 100644 src/AwesomeComponent copy.jsx
+ create mode 100644 src/components/AccommodationDropdown.jsx
+
+E:\MURALI\REACT-JS-CRASH-COURSE\figma-react>git push
+Enumerating objects: 14, done.
+Counting objects: 100% (14/14), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (8/8), 2.17 KiB | 1.08 MiB/s, done.
+Total 8 (delta 6), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (6/6), completed with 6 local objects.
+To https://github.com/gvnaresshuser/figma-react.git
+   038c723..78cd992  main -> main
+
+E:\MURALI\REACT-JS-CRASH-COURSE\figma-react>
+
+
+FIGMA TEMPLATE
+https://www.figma.com/design/Ui9xmqM4aGfQbJHj6PR8I1/Travel-App--Community-?node-id=0-1&t=SkzrjiKiKjnbOqhs-1
+
+REACT-JS APP
+https://figma-react-79rn.onrender.com/
+
+Without using any of the below tools available in market:
+
+🔹 Figma → React Plugins / Tools
+Locofy
+Visual Copilot (Builder.io)
+Anima
+DhiWise
+FigAct
+Unify
+TeleportHQ
+Figma to Code (plugin)
+Zeplin
+UXPin Merge
+Codigma
+Story.to.design
+Codelessly
+Quest AI
+Modulz
+Supernova
+Draftbit
+
+I have developed a procedure with semi-automatic tool to generate figma template to react js component.
+
+FIGMA TEMPLATE
+https://www.figma.com/design/Ui9xmqM4aGfQbJHj6PR8I1/Travel-App--Community-?node-id=0-1&t=SkzrjiKiKjnbOqhs-1
+
+REACT-JS APP
+https://figma-react-79rn.onrender.com/

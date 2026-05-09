@@ -1,0 +1,207 @@
+Here is the generalized professional method for converting a Figma hierarchy like yours into responsive React + Tailwind.
+
+STEP 1 — IDENTIFY HIERARCHY
+
+Your structure:
+
+Thumbnail
+ └── Content
+      └── Group 1
+           ├── Vector 1
+           ├── Vector 2
+           ├── Curve
+           └── Text
+		   
+
+STEP 2 — CLASSIFY ELEMENT TYPES
+
+This is the MOST important step.
+
+| Element   | Type                   | Responsive Strategy          |
+| --------- | ---------------------- | ---------------------------- |
+| Thumbnail | main canvas            | responsive container         |
+| Content   | layout container       | percentages                  |
+| Group 1   | decorative SVG cluster | responsive px + aspect ratio |
+| Vector 1  | decorative SVG         | local %                      |
+| Vector 2  | decorative SVG         | local %                      |
+| Curve     | decorative SVG         | local %                      |
+| Text      | typography             | responsive text              |
+
+
+STEP 3 — CONVERT MAIN CONTAINER
+Thumbnail
+width: 1600px;
+height: 960px;
+
+becomes:
+
+<div className="
+  w-full
+  max-w-[1600px]
+  aspect-[1600/960]
+  min-h-screen
+  mx-auto
+  relative
+  overflow-hidden
+">
+
+------------------------------------
+/* Thumbnail */
+position: relative;
+width: 1600px;
+height: 960px;
+						
+/* Content */
+position: absolute;
+width: 545px;
+height: 697.27px;
+left: 105px;
+top: 155px;
+------------------------------------
+STEP 4 — CONVERT CONTENT
+Content relative to Thumbnail
+
+Width %
+(545​/1600)×100=34.06%
+
+Height %
+(697.27​/960)×100=72.63%
+
+Left %
+(105/1600)×100=6.56%
+
+Top %
+(155/960)×100=16.15%
+
+FINAL
+<div className="
+  absolute
+  w-[34.06%]
+  left-[6.56%]
+  top-[16.15%]
+">
+
+Notice:
+❌ no fixed height
+
+because content height should grow naturally.		
+=========================================================
+/* Content */
+position: absolute;
+width: 545px;
+height: 697.27px;
+left: 105px;
+top: 155px;
+
+/* Group 1 */
+position: absolute;
+width: 131.76px;
+height: 119.82px;
+left: 410px;
+top: 155px;   
+
+Group Aspect Ratio
+
+131.76/119.82 ≈ 1.10
+
+Relative Left
+410−105=305
+
+Relative Left %
+305/545×100≈55.96%
+
+Relative Top
+155−155=0
+
+Relative Top %
+0/697.27×100≈0%
+===============================================
+STEP 6 — CONVERT VECTORS INSIDE GROUP
+
+Now all children use LOCAL percentages relative to Group 1.
+
+/* Vector small*/
+
+position: absolute;
+left: 29.12%;
+right: 67.71%;
+top: 22.71%;
+bottom: 72.02%;
+
+background: #FFFFFF;
+transform: rotate(7.51deg);
+
+Vector Small
+
+Figma:
+
+left: 29.12%;
+right: 67.71%;
+top: 22.71%;
+bottom: 72.02%;
+
+Width %
+100−29.12−67.71=3.17%
+
+Height %
+100−22.71−72.02=5.27%
+
+<div className="
+  absolute
+
+  left-[29.12%]
+  top-[22.71%]
+
+  w-[24%]
+  h-[24%]
+
+  rotate-[7.51deg]
+">
+=====================================================
+STEP 7 — CONVERT CURVE
+---------------------------------
+/* Vector 1 curve*/
+position: absolute;
+width: 24px;
+height: 21px;
+left: 513px;
+top: 219px;
+border: 3px solid #49C4DD;
+transform: rotate(15.58deg);
+-----
+/* Group 1 */
+position: absolute;
+width: 131.76px;
+height: 119.82px;
+left: 410px;
+top: 155px;   
+---------------------------------
+Relative Left
+513−410=103
+
+Relative Top
+219−155=64
+
+Left %
+103/131.76×100≈78.17%
+
+Top %
+64/119.82×100≈53.41%
+
+<div className="
+  absolute
+
+  left-[78%]
+  top-[53%]
+
+  w-[16%]
+  h-[22%]
+
+  rotate-[15.58deg]
+">
+
+left-[74.86%]
+top-[9.8%]
+
+left-[58%]
+top-[9.8%]
